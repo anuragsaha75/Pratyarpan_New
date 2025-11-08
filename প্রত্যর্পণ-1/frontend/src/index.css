@@ -1,4 +1,45 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
+:root{
+  --accent1: #f97316;
+  --accent2: #facc15;
+  --bg: #faf9f6;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --surface: #fff;
+  --radius: 10px;
+  --font: 'Inter', sans-serif;
+}
+
+body{
+  margin:0; font-family:var(--font); color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+  padding-top:70px; /* reserve space for fixed navbar */
+}
+
+/* Navbar */
+.navbar-brand img{height:45px}
+
+/* Hero */
+.hero{padding:4rem 1rem;background:linear-gradient(180deg,#fff,#fdf6f0);}
+.hero .display-4{max-width:900px;margin:auto}
+
+/* Events & cards reuse Bootstrap styles */
+
+/* Donate */
+#donation-amount{padding:.6rem 1rem;border:1px solid #ccc;border-radius:8px;margin:1rem 0;min-width:180px}
+
+/* Gallery */
+.caption{padding:.6rem;font-size:.9rem;color:var(--muted);}
+
+/* Contact */
+.form-feedback{color:var(--accent1);font-weight:600;margin-top:.5rem;}
+
+/* Footer */
+.site-footer{background:#1f2937;color:#fff;padding:1rem;margin-top:2rem}
+
+/* Small tweaks */
+.card-img-top{object-fit:cover;height:220px}
+
+@media(max-width:800px){
+  .hero{padding:3rem 1rem}
 }
